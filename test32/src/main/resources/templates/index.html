@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+    <form action="#" th:action="@{/main/add}" method="post" th:object="${addCar}">
+        <input type="text" field="*{car_name}" name="car_name" required placeholder="car_name"><br>
+        <input type="text" field="*{car_specification_name}" name="car_specification_name" required placeholder="car_specification_name"><br>
+        <input type="text" field="*{car_hp}" name="car_hp" required placeholder="car_hp"><br>
+        <input type="text" field="*{car_price}" name="car_price" required placeholder="car_price"><br>
+        <button>add</button>
+        <a href="http://localhost:8090/main">Add</a>
+    </form>
+
+</body>
+</html>
